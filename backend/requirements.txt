@@ -1,0 +1,6 @@
+flask
+flask-cors
+scikit-learn
+requests
+beautifulsoup4
+googlesearch-python

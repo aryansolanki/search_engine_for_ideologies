@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #f9f9f7, #f3f4f6);
+  color: #222;
+}
+
+.App {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #2a2a2a;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.search-bar input {
+  width: 500px;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  background: #fffaf3;
+}
+
+.search-bar button {
+  padding: 0.9rem 1.25rem;
+  font-size: 1rem;
+  background-color: #34495e;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #2c3e50;
+}
+
+.results-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.results-pane {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow-y: auto;
+  max-height: 75vh;
+  transition: transform 0.2s ease;
+}
+
+.results-pane h2 {
+  font-size: 1.2rem;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Merriweather', serif;
+}
+
+.result-item {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.result-item a {
+  color: #1a237e;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.result-item a:hover {
+  text-decoration: underline;
+}
+
+.result-item p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 0.4rem;
+  line-height: 1.5;
+}
+
+.ranking-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.ranking-select label {
+  font-weight: bold;
+  margin-right: 0.75rem;
+  font-family: 'Merriweather', serif;
+  color: #333;
+}
+
+.ranking-select select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fffaf3;
+  color: #2a2a2a;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.ranking-select select:hover,
+.ranking-select select:focus {
+  border-color: #34495e;
+}

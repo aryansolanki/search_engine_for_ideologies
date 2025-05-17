@@ -1,0 +1,23 @@
+# Ignore Python artifacts
+__pycache__/
+*.pyc
+*.pkl
+*.log
+*.sqlite3
+
+# Ignore virtual environments
+venv/
+
+# Ignore Node packages
+node_modules/
+build/
+
+# Ignore data (optional: allow samples)
+data/
+*.json
+*.csv
+*.tsv
+
+# OS files
+.DS_Store
+Thumbs.db
