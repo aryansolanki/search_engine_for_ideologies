@@ -36,12 +36,12 @@ search_engine_for_ideologies/
 │   ├── prepare_sklearn_index.py# Precomputes and serializes vector index
 │   ├── conver_pkl.py           # Converts raw data into .pkl format
 │   ├── terms.json              # Optional term dictionary for lookup
-│   ├── requirements.txt        # Backend Python dependencies
-|
+│
 ├── frontend/
 │   ├── public/                 # HTML template and icons
 │   └── src/                    # React components and styles
 │
+├── requirements.txt            # Backend Python dependencies
 ├── .gitignore
 └── README.md
 ```
@@ -58,27 +58,84 @@ search_engine_for_ideologies/
 
 ---
 
-## ⚙️ How to Run
+## ⚙️ How to Run the Project
 
-### 🐍 Backend (Flask)
+### ✅ Prerequisites
+Make sure you have these installed:
 
-```bash
-cd backend
-python -m venv venv
-venv\Scripts\activate       # Windows
-source venv/bin/activate      # Mac/Linux
-pip install -r requirements.txt
-python app.py
-```
+- [Python 3.8+](https://www.python.org/downloads/)
+- [Node.js & npm](https://nodejs.org/)
+- Git (to clone and push the repo)
 
-### ⚛️ Frontend (React)
+---
 
-```bash
-cd frontend
-npm install
-npm start
-```
+### 🐍 Backend Setup (Flask + Python)
 
+1. **Open a terminal and navigate to the backend folder**  
+   ```bash
+   cd backend
+   ```
+
+2. **Create a virtual environment (recommended)**  
+   ```bash
+   python -m venv venv
+   ```
+
+3. **Activate the virtual environment**  
+   - On **Windows**:  
+     ```bash
+     venv\Scripts\activate
+     ```
+   - On **Mac/Linux**:  
+     ```bash
+     source venv/bin/activate
+     ```
+
+4. **Install the Python dependencies**  
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Start the Flask server**  
+   ```bash
+   python app.py
+   ```
+
+6. 🟢 The backend should now be running at:  
+   ```
+   http://localhost:5000
+   ```
+
+---
+
+### ⚛️ Frontend Setup (React)
+
+1. **Open a new terminal and navigate to the frontend folder**  
+   ```bash
+   cd frontend
+   ```
+
+2. **Install React dependencies using npm**  
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**  
+   ```bash
+   npm start
+   ```
+
+4. 🟢 Open your browser and go to:  
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+### ✅ Connecting Backend & Frontend
+
+- The React frontend will send search queries to the Flask backend on `localhost:5000`.
+- Make sure both servers are running at the same time.
 ---
 
 ## 🔍 How the Search Works
@@ -113,6 +170,9 @@ npm start
 
 This project is licensed under the **MIT License** – you’re free to use and modify it.
 
----
+```
 
 That's it!
+
+---
+
