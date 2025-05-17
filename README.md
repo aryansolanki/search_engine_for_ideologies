@@ -36,12 +36,12 @@ search_engine_for_ideologies/
 │   ├── prepare_sklearn_index.py# Precomputes and serializes vector index
 │   ├── conver_pkl.py           # Converts raw data into .pkl format
 │   ├── terms.json              # Optional term dictionary for lookup
-│
+│   ├── requirements.txt        # Backend Python dependencies
+|
 ├── frontend/
 │   ├── public/                 # HTML template and icons
 │   └── src/                    # React components and styles
 │
-├── requirements.txt            # Backend Python dependencies
 ├── .gitignore
 └── README.md
 ```

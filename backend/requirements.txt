@@ -1,6 +1,10 @@
 flask
 flask-cors
 scikit-learn
-requests
 beautifulsoup4
 googlesearch-python
+requests
+aiohttp
+lxml
+numpy
+joblib
